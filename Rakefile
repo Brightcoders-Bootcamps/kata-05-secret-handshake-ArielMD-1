@@ -25,4 +25,12 @@ RubyCritic::RakeTask.new(:test) do |task|
   task.paths = FileList['spec/**/*.rb']
 end
 
-task default: %w[source test]
+task :spec_tests do
+  system 'rspec  spec/*.rb --format doc'
+end
+
+task :code do
+  system 'ruby  src/main.rb'
+end
+
+task default: %w[spec_tests source test code]
