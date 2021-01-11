@@ -8,15 +8,15 @@ Pasos para ejecutar el programa
 ```
     bundle install
 ```
-4. ejecutar el archivo principal del juego ```bowling.rb```
+4. ejecutar el archivo principal del juego ```main.rb```
 ```
-    ruby src/bowling.rb
+    ruby src/main.rb
 ```
 5. ejecutar el archivo rakefile, para ejecutar las pruebas y generar los reportes
 ```
     rake
 ```
-las pruebas se encuentran en ``` spec/model```
+las pruebas se encuentran en ``` spec/```
 
 la puntuación de rubycritic se encuentra en ```rubicritic```
 
