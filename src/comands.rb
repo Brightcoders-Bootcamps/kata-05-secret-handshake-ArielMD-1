@@ -30,6 +30,6 @@ class Comands
   def reverse(list)
     temp = list.reverse.dup
     list.clear
-    list << temp
+    list = temp.each { |item| list << item }
   end
 end

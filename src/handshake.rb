@@ -10,6 +10,8 @@ class HandShake
     results = num_is_valid ? secret(num) : 'invalid number'
   end
 
+  private
+
   def secret(num)
     results = []
     num.to_s(2).chars.reverse.each_with_index do |character, index|
